@@ -36,9 +36,9 @@ fi
 
 # GNU Tools for ARM Embedded Processors
 # (see https://launchpad.net/gcc-arm-embedded/)
-ARM_ROOT="gcc-arm-none-eabi-4_9-2015q3"
-ARM_TARBALL="$ARM_ROOT-20150921-linux.tar.bz2"
-ARM_TARBALL_URL="http://firmware.ardupilot.org/Tools/PX4-tools/$ARM_TARBALL"
+ARM_ROOT="gcc-arm-none-eabi-5_4-2016q2"
+ARM_TARBALL="$ARM_ROOT-20160622-linux.tar.bz2"
+ARM_TARBALL_URL="https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q2-update/+download/$ARM_TARBALL"
 
 # Ardupilot Tools
 ARDUPILOT_TOOLS="Tools/autotest"
@@ -122,9 +122,3 @@ grep -Fxq "$exportline2" ~/.profile 2>/dev/null || {
 }
 
 apt-cache search arm-none-eabi
-
-(
- cd $ARDUPILOT_ROOT
- git submodule init
- git submodule update
-)

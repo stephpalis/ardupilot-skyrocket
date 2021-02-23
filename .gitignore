@@ -88,3 +88,9 @@ status.txt
 tags
 terrain/
 test.ArduCopter/*
+.ccache/*
+.cache/*
+.bash_history
+.idea/*
+.local/*
+arducopter.abin
